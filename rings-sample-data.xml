@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+	<title>Ring Showcase Sample Data</title>
+	<description>Complete sample ring data with images</description>
+	<wp:wxr_version>1.2</wp:wxr_version>
+
+	<!-- Ring Posts -->
+	<item>
+		<title>Classic Solitaire Diamond Engagement Ring</title>
+		<pubDate>Wed, 23 Sep 2025 12:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Timeless elegance meets modern craftsmanship in this stunning solitaire diamond engagement ring. Features a brilliant round cut diamond in a classic six-prong setting.]]></content:encoded>
+		<wp:post_id>100</wp:post_id>
+		<wp:post_date>2025-09-23 12:00:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[1.25]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[2850]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Blue Nile]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.bluenile.com/classic-solitaire]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1606808830319-346f820b5aef?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Yellow Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#FFD700]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Rose Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8B4A0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1596944946555-7c835b41b47a?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Vintage Art Deco Halo Engagement Ring</title>
+		<pubDate>Wed, 23 Sep 2025 12:15:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Art Deco inspired halo setting with intricate vintage details and sparkling side stones. Features milgrain detailing and geometric patterns.]]></content:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date>2025-09-23 12:15:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[1.5]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[3200]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[James Allen]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.jamesallen.com/vintage-halo]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Platinum]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E5E4E2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1564842943171-0ba87a3acef4?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1566934405817-e98136c32cf9?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Three Stone Princess Cut Diamond Ring</title>
+		<pubDate>Wed, 23 Sep 2025 12:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Stunning three stone design featuring a princess cut center diamond with matching side stones. Symbolizes past, present, and future.]]></content:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date>2025-09-23 12:30:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[2.0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[4750]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Brilliant Earth]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.brilliantearth.com/three-stone]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1595811634977-e5886f2c7b42?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1609706592242-b2c23a76dc9b?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Platinum]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E5E4E2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1610833916851-db5962e1baac?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Yellow Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#FFD700]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1610833916851-db5962e1baac?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Modern Tension Set Solitaire</title>
+		<pubDate>Wed, 23 Sep 2025 12:45:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Contemporary tension setting that appears to suspend the diamond in mid-air. Ultra-modern design for the sophisticated bride.]]></content:encoded>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_date>2025-09-23 12:45:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[0.75]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[1850]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Shane Co]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.shaneco.com/tension-setting]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Titanium]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#878681]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1608042314453-ae338d80c427?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1606808830319-346f820b5aef?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Split Shank Micro Pave Halo Ring</title>
+		<pubDate>Wed, 23 Sep 2025 13:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Elegant split shank design with micro pave diamonds creating maximum sparkle. Features over 60 accent diamonds.]]></content:encoded>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_date>2025-09-23 13:00:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[1.0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[2400]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Ritani]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.ritani.com/split-shank-halo]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Rose Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8B4A0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1596944946555-7c835b41b47a?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1606808830319-346f820b5aef?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Yellow Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#FFD700]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Cathedral Solitaire with Side Stones</title>
+		<pubDate>Wed, 23 Sep 2025 13:15:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Majestic cathedral setting with delicate side stones. Features graceful arches that lift the center diamond.]]></content:encoded>
+		<wp:post_id>105</wp:post_id>
+		<wp:post_date>2025-09-23 13:15:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[1.75]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[3800]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Zales]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.zales.com/cathedral-setting]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1595811634977-e5886f2c7b42?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1609706592242-b2c23a76dc9b?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Platinum]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E5E4E2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1564842943171-0ba87a3acef4?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Cushion Cut Double Halo Diamond Ring</title>
+		<pubDate>Wed, 23 Sep 2025 13:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Romantic cushion cut diamond with double halo for extra brilliance. Features vintage-inspired details.]]></content:encoded>
+		<wp:post_id>106</wp:post_id>
+		<wp:post_date>2025-09-23 13:30:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[1.3]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[3100]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Kay Jewelers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.kay.com/cushion-halo]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Yellow Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#FFD700]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Rose Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8B4A0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1596944946555-7c835b41b47a?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1606808830319-346f820b5aef?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Modern Bezel Set Round Diamond</title>
+		<pubDate>Wed, 23 Sep 2025 13:45:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Sleek bezel setting offers maximum protection for active lifestyles. Contemporary and secure design.]]></content:encoded>
+		<wp:post_id>107</wp:post_id>
+		<wp:post_date>2025-09-23 13:45:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[0.9]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[2200]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Costco]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.costco.com/bezel-diamond]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Rose Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8B4A0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1596944946555-7c835b41b47a?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Yellow Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#FFD700]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Emerald Cut Classic Solitaire</title>
+		<pubDate>Wed, 23 Sep 2025 14:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Sophisticated emerald cut diamond in a timeless solitaire setting. Features exceptional clarity and brilliance.]]></content:encoded>
+		<wp:post_id>108</wp:post_id>
+		<wp:post_date>2025-09-23 14:00:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[2.25]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[5200]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Tiffany & Co]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.tiffany.com/emerald-solitaire]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Platinum]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E5E4E2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1564842943171-0ba87a3acef4?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1606808830319-346f820b5aef?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Twisted Band Pave Halo Setting</title>
+		<pubDate>Wed, 23 Sep 2025 14:15:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Unique twisted band with pave diamonds and stunning halo setting. Features intricate craftsmanship and sparkle.]]></content:encoded>
+		<wp:post_id>109</wp:post_id>
+		<wp:post_date>2025-09-23 14:15:00</wp:post_date>
+		<wp:post_type>ring</wp:post_type>
+		<wp:status>publish</wp:status>
+		
+		<wp:postmeta>
+			<wp:meta_key>ring_carat</wp:meta_key>
+			<wp:meta_value><![CDATA[1.1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_price</wp:meta_key>
+			<wp:meta_value><![CDATA[2650]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor</wp:meta_key>
+			<wp:meta_value><![CDATA[Helzberg Diamonds]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_vendor_url</wp:meta_key>
+			<wp:meta_value><![CDATA[https://www.helzberg.com/twisted-halo]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors</wp:meta_key>
+			<wp:meta_value><![CDATA[4]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[White Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8E8E8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1606808830319-346f820b5aef?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_0_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Rose Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#E8B4A0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1596944946555-7c835b41b47a?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_1_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Yellow Gold]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#FFD700]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_2_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_3_color_name</wp:meta_key>
+			<wp:meta_value><![CDATA[Two-Tone]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_3_color_code</wp:meta_key>
+			<wp:meta_value><![CDATA[#D4AF37]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_3_front_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_3_back_image</wp:meta_key>
+			<wp:meta_value><![CDATA[https://images.unsplash.com/photo-1610833916851-db5962e1baac?w=500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>ring_colors_3_is_default</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+</channel>
+</rss>

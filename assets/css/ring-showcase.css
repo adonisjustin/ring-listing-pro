@@ -1,0 +1,1213 @@
+/**
+ * Ring Showcase Pro CSS - Complete Version
+ * Desktop: 3 columns | Tablet: 2 columns | Mobile: 1 column
+ */
+
+/* ========================================
+   1. IMPORTS & ROOT VARIABLES
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --rsp-font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --rsp-primary: #0057A3;
+    --rsp-primary-dark: #0057A3;
+    --rsp-success: #10b981;
+    --rsp-error: #ef4444;
+    --rsp-gray-50: #f9fafb;
+    --rsp-gray-100: #f3f4f6;
+    --rsp-gray-200: #e5e7eb;
+    --rsp-gray-300: #d1d5db;
+    --rsp-gray-400: #9ca3af;
+    --rsp-gray-600: #6b7280;
+    --rsp-gray-700: #374151;
+    --rsp-gray-900: #1f2937;
+    --rsp-spacing: 30px;
+}
+
+/* ========================================
+   2. BASE CONTAINER
+======================================== */
+.rsp-showcase {
+    font-family: var(--rsp-font) !important;
+    line-height: 1.6 !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    color: #333 !important;
+}
+
+.rsp-showcase * {
+    box-sizing: border-box !important;
+}
+
+/* ========================================
+   3. TOP BAR & CONTROLS
+======================================== */
+.rsp-top-bar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 20px !important;
+    padding: 20px 30px !important;
+    margin-bottom: 30px !important;
+    background: white !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    flex-wrap: wrap !important;
+}
+
+.rsp-controls-left {
+    flex: 1 !important;
+    min-width: 300px !important;
+}
+
+.rsp-controls-right {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    flex-wrap: nowrap !important;
+}
+
+/* Search Box */
+.rsp-search-box {
+    display: flex !important;
+    max-width: 400px !important;
+    width: 100% !important;
+    min-width: 0 !important; /* ADD THIS LINE */
+}
+
+.rsp-search-box input {
+    flex: 1 !important;
+    padding: 12px 16px !important;
+    border: 2px solid #e0e7ff !important;
+    border-right: none !important;
+    border-radius: 8px 0 0 8px !important;
+    font-size: 16px !important;
+    font-family: var(--rsp-font) !important;
+    outline: none !important;
+    transition: border-color 0.3s ease !important;
+}
+
+.rsp-search-box input:focus {
+    border-color: var(--rsp-primary) !important;
+}
+
+.rsp-search-box button {
+    padding: 12px 16px !important;
+    background: var(--rsp-primary) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0 8px 8px 0 !important;
+    cursor: pointer !important;
+    font-family: var(--rsp-font) !important;
+    transition: background 0.3s ease !important;
+}
+
+.rsp-search-box button:hover {
+    background: var(--rsp-primary-dark) !important;
+}
+
+/* Results Count */
+.rsp-results-count {
+    font-weight: 600 !important;
+    color: var(--rsp-gray-600) !important;
+    white-space: nowrap !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Filter Button */
+.rsp-filter-btn {
+    position: relative !important;
+    padding: 10px 20px !important;
+    background: var(--rsp-gray-100) !important;
+    color: var(--rsp-gray-700) !important;
+    border: 2px solid transparent !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    font-family: var(--rsp-font) !important;
+    transition: all 0.3s ease !important;
+}
+
+.rsp-filter-btn:hover,
+.rsp-filter-btn.has-filters {
+    background: var(--rsp-primary) !important;
+    color: white !important;
+}
+
+.rsp-filter-badge {
+    position: absolute !important;
+    top: -8px !important;
+    right: -8px !important;
+    background: var(--rsp-error) !important;
+    color: white !important;
+    border-radius: 50% !important;
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Dropdowns */
+.rsp-per-page,
+.rsp-sort {
+    padding: 8px 12px !important;
+    border: 1px solid var(--rsp-gray-300) !important;
+    border-radius: 6px !important;
+    background: white !important;
+    font-size: 14px !important;
+    min-width: 120px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* ========================================
+   4. GRID LAYOUT - MAIN RESPONSIVE RULES
+======================================== */
+
+/* Base Grid */
+.rsp-grid {
+    display: grid !important;
+    gap: var(--rsp-spacing) !important;
+    margin-bottom: 40px !important;
+    width: 100% !important;
+    grid-auto-rows: 1fr !important;
+    align-items: stretch !important;
+}
+
+/* DESKTOP - 3 Columns (default) */
+.rsp-grid,
+.rsp-columns-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* TABLET - 2 Columns */
+@media (max-width: 991px) {
+    .rsp-grid,
+    .rsp-columns-3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 25px !important;
+    }
+}
+
+/* MOBILE - 1 Column */
+@media (max-width: 767px) {
+    .rsp-grid,
+    .rsp-columns-3 {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+}
+
+/* ========================================
+   5. RING CARDS
+======================================== */
+.rsp-ring-card {
+    background: white !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    min-height: 500px !important;
+}
+
+.rsp-ring-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
+}
+
+/* Ring Image */
+.rsp-ring-image-wrapper {
+    position: relative !important;
+    padding-top: 75% !important;
+    overflow: hidden !important;
+    background: var(--rsp-gray-50) !important;
+}
+
+.rsp-ring-images {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+}
+
+.rsp-ring-images img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    opacity: 0 !important;
+    transition: opacity 0.4s ease !important;
+}
+
+.rsp-ring-images img.active {
+    opacity: 1 !important;
+}
+
+.rsp-no-image {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: var(--rsp-gray-400) !important;
+    font-family: var(--rsp-font) !important;
+    font-weight: 500 !important;
+}
+
+/* Price Badge */
+.rsp-price-badge {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    background: var(--rsp-success) !important;
+    color: white !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    z-index: 10 !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Color Swatches */
+.rsp-color-swatches {
+    position: absolute !important;
+    bottom: 15px !important;
+    left: 15px !important;
+    display: flex !important;
+    gap: 8px !important;
+    z-index: 10 !important;
+}
+
+.rsp-color-swatch {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+    border: 3px solid white !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+}
+
+.rsp-color-swatch:hover,
+.rsp-color-swatch.active {
+    transform: scale(1.2) !important;
+    border-color: #fbbf24 !important;
+}
+
+/* Hover Overlay */
+.rsp-hover-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(0,0,0,0.7) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+    z-index: 5 !important;
+}
+
+.rsp-ring-card:hover .rsp-hover-overlay {
+    opacity: 1 !important;
+}
+
+.rsp-quick-view {
+    background: white !important;
+    color: var(--rsp-gray-700) !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-quick-view:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+}
+
+/* Ring Info */
+.rsp-ring-info {
+    padding: 24px !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.rsp-ring-title {
+    margin: 0 0 12px 0 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-ring-title a {
+    color: var(--rsp-gray-900) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+
+.rsp-ring-title a:hover {
+    color: var(--rsp-primary) !important;
+}
+
+.rsp-ring-meta {
+    display: flex !important;
+    gap: 12px !important;
+    margin-bottom: 16px !important;
+    flex-wrap: wrap !important;
+}
+
+.rsp-carat,
+.rsp-color-name {
+    background: var(--rsp-gray-100) !important;
+    color: var(--rsp-gray-600) !important;
+    padding: 4px 12px !important;
+    border-radius: 20px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Price */
+.rsp-price-section {
+    margin-bottom: 20px !important;
+}
+
+.rsp-price {
+    display: flex !important;
+    align-items: baseline !important;
+    margin-bottom: 4px !important;
+}
+
+.rsp-currency {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: var(--rsp-gray-600) !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-amount {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: var(--rsp-gray-900) !important;
+    margin-left: 2px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-vendor {
+    font-size: 14px !important;
+    color: var(--rsp-gray-600) !important;
+    font-style: italic !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Ring Actions */
+.rsp-ring-actions {
+    margin-top: 20px !important;
+}
+
+.rsp-view-ring {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    padding: 12px 20px !important;
+    background: var(--rsp-primary) !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-view-ring:hover {
+    background: var(--rsp-primary-dark) !important;
+    transform: translateY(-1px) !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+/* ========================================
+   6. FILTERS PANEL
+======================================== */
+.rsp-filters {
+    position: fixed !important;
+    top: 0 !important;
+    right: -400px !important;
+    width: 400px !important;
+    height: 100vh !important;
+    background: white !important;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.1) !important;
+    z-index: 1000 !important;
+    transition: right 0.3s ease !important;
+    overflow-y: auto !important;
+}
+
+.rsp-filters.active {
+    right: 0 !important;
+}
+
+.rsp-filters-container {
+    padding: 20px !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.rsp-filters-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 15px !important;
+    border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.rsp-filters-header h4 {
+    margin: 0 !important;
+    font-size: 18px !important;
+    color: #1e293b !important;
+    font-family: var(--rsp-font) !important;
+    font-weight: 600 !important;
+}
+
+.rsp-close-filters {
+    background: none !important;
+    border: none !important;
+    font-size: 20px !important;
+    color: var(--rsp-gray-600) !important;
+    cursor: pointer !important;
+    padding: 5px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-filters-grid {
+    flex: 1 !important;
+    overflow-y: auto !important;
+}
+
+.rsp-filter-section {
+    margin-bottom: 30px !important;
+}
+
+.rsp-filter-section h5 {
+    margin: 0 0 15px 0 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: var(--rsp-gray-700) !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Price Filter */
+.rsp-price-filter {
+    background: #f8fafc !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+}
+
+.rsp-price-inputs {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+.rsp-price-inputs input[type="number"] {
+    flex: 1 !important;
+    padding: 8px 12px !important;
+    border: 1px solid var(--rsp-gray-300) !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-price-separator {
+    color: var(--rsp-gray-600) !important;
+    font-weight: 500 !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-price-range {
+    position: relative !important;
+    height: 6px !important;
+    background: var(--rsp-gray-200) !important;
+    border-radius: 3px !important;
+    margin: 15px 0 !important;
+}
+
+.rsp-price-range input[type="range"] {
+    position: absolute !important;
+    top: -10px !important;
+    width: 100% !important;
+    height: 6px !important;
+    background: transparent !important;
+    -webkit-appearance: none !important;
+    pointer-events: none !important;
+}
+
+.rsp-price-range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    background: var(--rsp-primary) !important;
+    cursor: pointer !important;
+    pointer-events: all !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+}
+
+.rsp-price-range input[type="range"]::-moz-range-thumb {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    background: var(--rsp-primary) !important;
+    cursor: pointer !important;
+    pointer-events: all !important;
+    border: none !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+}
+
+.rsp-price-display {
+    text-align: center !important;
+    font-weight: 600 !important;
+    color: var(--rsp-primary) !important;
+    margin-top: 10px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Checkbox Lists */
+.rsp-checkbox-list {
+    max-height: 200px !important;
+    overflow-y: auto !important;
+}
+
+.rsp-checkbox-item {
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px 0 !important;
+    cursor: pointer !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    transition: background 0.2s ease !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-checkbox-item:hover {
+    background: #f8fafc !important;
+}
+
+.rsp-checkbox-item input[type="checkbox"] {
+    margin-right: 12px !important;
+    width: 18px !important;
+    height: 18px !important;
+    cursor: pointer !important;
+}
+
+.rsp-checkmark {
+    position: relative !important;
+    width: 18px !important;
+    height: 18px !important;
+    border: 2px solid var(--rsp-gray-300) !important;
+    border-radius: 3px !important;
+    margin-right: 12px !important;
+    transition: all 0.2s ease !important;
+}
+
+.rsp-checkbox-item input[type="checkbox"]:checked + .rsp-checkmark {
+    background: var(--rsp-primary) !important;
+    border-color: var(--rsp-primary) !important;
+}
+
+.rsp-checkbox-item input[type="checkbox"]:checked + .rsp-checkmark::after {
+    content: '\2713' !important;
+    position: absolute !important;
+    top: -2px !important;
+    left: 2px !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.rsp-count {
+    margin-left: auto !important;
+    color: var(--rsp-gray-600) !important;
+    font-size: 12px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Color Filters */
+.rsp-color-filters {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+}
+
+.rsp-color-filter {
+    display: flex !important;
+    align-items: center !important;
+    padding: 8px !important;
+    border: 1px solid var(--rsp-gray-200) !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+.rsp-color-filter:hover {
+    border-color: var(--rsp-primary) !important;
+    background: #f8fafc !important;
+}
+
+.rsp-color-filter input[type="checkbox"] {
+    margin-right: 8px !important;
+}
+
+.rsp-color-visual {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    border: 1px solid var(--rsp-gray-300) !important;
+    margin-right: 8px !important;
+}
+
+.rsp-color-text {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Filter Actions */
+.rsp-filter-actions {
+    display: flex !important;
+    gap: 10px !important;
+    padding-top: 20px !important;
+    border-top: 2px solid #f1f5f9 !important;
+    margin-top: auto !important;
+}
+
+.rsp-btn {
+    flex: 1 !important;
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-btn-secondary {
+    background: var(--rsp-gray-100) !important;
+    color: var(--rsp-gray-600) !important;
+}
+
+.rsp-btn-secondary:hover {
+    background: var(--rsp-gray-200) !important;
+}
+
+.rsp-btn-primary {
+    background: var(--rsp-primary) !important;
+    color: white !important;
+}
+
+.rsp-btn-primary:hover {
+    background: var(--rsp-primary-dark) !important;
+}
+
+/* ========================================
+   7. DIAMOND SHAPES FILTER
+======================================== */
+.rsp-diamond-shapes-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px !important;
+    margin-top: 15px !important;
+}
+
+.rsp-diamond-shape-item {
+    cursor: pointer !important;
+    position: relative !important;
+    display: block !important;
+}
+
+.rsp-diamond-shape-item input[type="checkbox"] {
+    position: absolute !important;
+    opacity: 0 !important;
+    cursor: pointer !important;
+}
+
+.rsp-diamond-shape-box {
+    border: 2px solid var(--rsp-gray-200) !important;
+    border-radius: 12px !important;
+    padding: 12px 8px !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+    background: white !important;
+    min-height: 100px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+}
+
+.rsp-diamond-shape-box img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+.rsp-diamond-placeholder {
+    width: 50px !important;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: var(--rsp-gray-300) !important;
+    font-size: 32px !important;
+}
+
+.rsp-diamond-name {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: var(--rsp-gray-700) !important;
+    font-family: var(--rsp-font) !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+}
+
+.rsp-diamond-shape-item input[type="checkbox"]:checked + .rsp-diamond-shape-box {
+    border-color: var(--rsp-primary) !important;
+    background: #f0f0ff !important;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.1) !important;
+}
+
+.rsp-diamond-shape-item:hover .rsp-diamond-shape-box {
+    border-color: var(--rsp-primary) !important;
+    background: #f8fafc !important;
+}
+
+/* ========================================
+   8. LOADING & EMPTY STATES
+======================================== */
+.rsp-loading {
+    display: block !important;
+    text-align: center !important;
+    padding: 60px 20px !important;
+}
+
+.rsp-showcase.loaded .rsp-loading {
+    display: none !important;
+}
+
+/* Hide grid initially until loaded */
+.rsp-grid {
+    transition: opacity 0.3s ease !important;
+}
+
+.rsp-showcase.loaded .rsp-grid {
+    opacity: 1 !important;
+}
+
+.rsp-loading p {
+    font-family: var(--rsp-font) !important;
+    color: var(--rsp-gray-600) !important;
+    margin-top: 20px !important;
+}
+
+.rsp-spinner {
+    width: 40px !important;
+    height: 40px !important;
+    border: 4px solid var(--rsp-gray-100) !important;
+    border-top: 4px solid var(--rsp-primary) !important;
+    border-radius: 50% !important;
+    animation: spin 1s linear infinite !important;
+    margin: 0 auto 20px !important;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Load More */
+.rsp-load-more-container {
+    display: none !important;
+    text-align: center !important;
+    margin: 40px 0 !important;
+}
+
+.rsp-load-more-container.show {
+    display: block !important; /* Show only when needed */
+}
+
+.rsp-load-more {
+    background: var(--rsp-primary) !important;
+    color: white !important;
+    border: none !important;
+    padding: 16px 32px !important;
+    border-radius: 12px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-load-more:hover {
+    background: var(--rsp-primary-dark) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* No Results */
+.rsp-no-results {
+    text-align: center !important;
+    padding: 80px 20px !important;
+    color: var(--rsp-gray-600) !important;
+}
+
+.no-results-content i {
+    color: var(--rsp-gray-300) !important;
+    margin-bottom: 20px !important;
+}
+
+.no-results-content h3 {
+    margin: 0 0 12px 0 !important;
+    font-size: 24px !important;
+    color: var(--rsp-gray-700) !important;
+    font-family: var(--rsp-font) !important;
+    font-weight: 600 !important;
+}
+
+.no-results-content p {
+    margin: 0 0 24px 0 !important;
+    font-size: 16px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-clear-btn {
+    background: var(--rsp-primary) !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* Error States */
+.rsp-error-message {
+    text-align: center !important;
+    padding: 40px !important;
+    background: #fef2f2 !important;
+    border-radius: 12px !important;
+    color: #dc2626 !important;
+    margin: 20px 0 !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-retry-btn {
+    background: #dc2626 !important;
+    color: white !important;
+    border: none !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    margin-left: 10px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-quick-view-error {
+    text-align: center !important;
+    padding: 60px 40px !important;
+}
+
+.rsp-error-icon {
+    font-size: 48px !important;
+    color: var(--rsp-error) !important;
+    margin-bottom: 20px !important;
+}
+
+.rsp-quick-view-error h3 {
+    margin: 0 0 16px 0 !important;
+    color: var(--rsp-gray-700) !important;
+    font-family: var(--rsp-font) !important;
+    font-weight: 600 !important;
+}
+
+.rsp-quick-view-error p {
+    color: var(--rsp-gray-600) !important;
+    margin-bottom: 24px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+.rsp-no-link {
+    color: var(--rsp-gray-600) !important;
+    font-style: italic !important;
+    margin-top: 20px !important;
+    font-family: var(--rsp-font) !important;
+}
+
+/* ========================================
+   9. RESPONSIVE ADJUSTMENTS
+======================================== */
+
+/* TABLET */
+@media (max-width: 991px) {
+    .rsp-top-bar {
+        padding: 15px 20px !important;
+    }
+    
+    .rsp-controls-right {
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+    }
+    
+    .rsp-ring-card {
+        min-height: 450px !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .rsp-showcase {
+        padding: 0 15px !important;
+    }
+    
+    .rsp-top-bar {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 15px !important;
+        gap: 15px !important;
+    }
+    
+    .rsp-controls-left {
+        min-width: auto !important;
+        order: 1 !important;
+        width: 100% !important; /* ADD THIS */
+        max-width: 100% !important; /* ADD THIS */
+    }
+
+    .rsp-search-box {
+        max-width: 100% !important; /* OVERRIDE desktop max-width */
+        width: 100% !important;
+        min-width: 0 !important; /* ADD THIS */
+    }
+    
+    .rsp-search-box input {
+        min-width: 0 !important; /* ADD THIS - prevents text input from expanding */
+        font-size: 16px !important;
+    }
+
+        .rsp-search-box button {
+        flex-shrink: 0 !important; /* ADD THIS - prevents button from shrinking */
+    }
+    
+    .rsp-controls-right {
+        justify-content: space-between !important;
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+        order: 2 !important;
+    }
+    
+    .rsp-per-page,
+    .rsp-sort {
+        min-width: 100px !important;
+        font-size: 13px !important;
+    }
+    
+    .rsp-filters {
+        width: 100% !important;
+        right: -100% !important;
+    }
+    
+    .rsp-filters-container {
+        padding: 15px !important;
+    }
+    
+    .rsp-filters-header h4 {
+        font-size: 16px !important;
+    }
+    
+    .rsp-filter-section h5 {
+        font-size: 14px !important;
+    }
+    
+    .rsp-color-filters {
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+    }
+    
+    .rsp-filter-actions {
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+    
+    .rsp-btn {
+        padding: 12px 16px !important;
+        font-size: 14px !important;
+    }
+    
+    .rsp-diamond-shapes-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+    
+    .rsp-diamond-shape-box {
+        min-height: 90px !important;
+        padding: 10px 6px !important;
+    }
+    
+    .rsp-diamond-shape-box img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .rsp-diamond-name {
+        font-size: 11px !important;
+    }
+    
+    .rsp-ring-card {
+        min-height: 420px !important;
+    }
+    
+    .rsp-ring-info {
+        padding: 16px !important;
+    }
+    
+    .rsp-ring-title {
+        font-size: 16px !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .rsp-amount {
+        font-size: 20px !important;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .rsp-showcase {
+        padding: 0 10px !important;
+    }
+    
+    .rsp-grid {
+        gap: 15px !important;
+    }
+    
+    .rsp-ring-card {
+        min-height: 380px !important;
+    }
+    
+    .rsp-ring-info {
+        padding: 12px !important;
+    }
+    
+    .rsp-ring-title {
+        font-size: 14px !important;
+        line-height: 1.3 !important;
+    }
+    
+    .rsp-ring-meta span {
+        font-size: 11px !important;
+        padding: 3px 8px !important;
+    }
+    
+    .rsp-search-box input {
+        font-size: 16px !important; /* Prevent zoom on iOS */
+    }
+}
+
+/* ========================================
+   10. ACCESSIBILITY
+======================================== */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Focus States */
+.rsp-search-box input:focus,
+.rsp-filter-btn:focus,
+.rsp-btn:focus,
+.rsp-quick-view:focus,
+.rsp-view-ring:focus {
+    outline: 2px solid var(--rsp-primary) !important;
+    outline-offset: 2px !important;
+}
+
+/* ========================================
+   11. BODY MODAL STATES
+======================================== */
+body.rsp-modal-open {
+    overflow: hidden !important;
+}
+
+body.rsp-filters-open {
+    overflow: hidden !important;
+}
+
+@media (min-width: 769px) {
+    body.rsp-filters-open {
+        overflow: auto !important;
+    }
+}
+
+/* ========================================
+   12. PRINT STYLES
+======================================== */
+@media print {
+    .rsp-top-bar,
+    .rsp-filters,
+    .rsp-hover-overlay,
+    .rsp-load-more-container {
+        display: none !important;
+    }
+    
+    .rsp-ring-card {
+        break-inside: avoid !important;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+}
+
+
