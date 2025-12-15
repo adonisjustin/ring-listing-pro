@@ -187,7 +187,6 @@ register_activation_hook(__FILE__, function() {
     }
 });
 
-
 // Disable Gutenberg completely
 function disable_gutenberg_completely($use_block_editor, $post_type) {
     return false;
