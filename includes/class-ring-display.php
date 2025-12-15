@@ -50,8 +50,8 @@ class RSP_Ring_Display
                         <option value="menu_order-asc">Default Order (Custom)</option>
                         <option value="date-desc">Newest First</option>
                         <option value="date-asc">Oldest First</option>
-                        <option value="price-asc">Price: Low to High</option>
-                        <option value="price-desc">Price: High to Low</option>
+                        <!-- <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option> -->
                         <option value="title-asc">Name: A to Z</option>
                     </select>
                 </div>
@@ -63,6 +63,26 @@ class RSP_Ring_Display
                     <?php echo $ring_filters->render_filters(); ?>
                 </div>
             <?php endif; ?>
+
+            <!-- Skeleton Loader (shown on initial load) -->
+            <div class="rsp-skeleton-grid">
+                <?php for ($i = 0; $i < 12; $i++): ?>
+                    <div class="rsp-skeleton-card">
+                        <div class="rsp-skeleton-image"></div>
+                        <div class="rsp-skeleton-content">
+                            <div class="rsp-skeleton-title"></div>
+                            <div class="rsp-skeleton-title short"></div>
+                            <div class="rsp-skeleton-meta">
+                                <div class="rsp-skeleton-badge"></div>
+                                <div class="rsp-skeleton-badge"></div>
+                            </div>
+                            <div class="rsp-skeleton-price"></div>
+                            <div class="rsp-skeleton-vendor"></div>
+                            <div class="rsp-skeleton-button"></div>
+                        </div>
+                    </div>
+                <?php endfor; ?>
+            </div>
 
             <!-- Ring Grid -->
             <div id="rsp-grid" class="rsp-grid rsp-columns-<?php echo esc_attr($atts['columns']); ?>">

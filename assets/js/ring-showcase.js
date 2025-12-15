@@ -12,7 +12,7 @@
             this.sortBy = 'menu_order-asc';
             this.loading = false;
             this.totalPages = 1;
-            // Add this line at the end of handleLoadSuccess method
+            this.initialLoad = true;
             this.debugRingCards();
 
             if (this.container.length) {
@@ -226,113 +226,126 @@
             this.closeFilters();
         }
 
-        loadRings(append = false) {
-            if (this.loading) return;
+loadRings(append = false) {
+    if (this.loading) return;
+    
+    this.loading = true;
+    
+    // Show loading overlay for filter changes (not initial load)
+    if (!this.initialLoad && !append) {
+        this.container.addClass('filtering');
+    }
+    
+    if (!append) {
+        this.grid.empty();
+        $('#rsp-no-results').hide();
+    }
+    
+    // Parse sort
+    const [sortBy, sortOrder] = this.sortBy.split('-');
+    
+    // Determine orderby value for WordPress
+    let orderby = sortBy;
+    let metaKey = '';
+    
+    if (sortBy === 'price') {
+        orderby = 'meta_value_num';
+        metaKey = 'ring_price';
+    }
+    
+    $.ajax({
+        url: rsp_ajax.ajax_url,
+        type: 'POST',
+        data: {
+            action: 'rsp_load_rings',
+            nonce: rsp_ajax.nonce,
+            page: this.currentPage,
+            per_page: this.perPage,
+            search: this.searchQuery,
+            filters: this.filters,
+            orderby: orderby,
+            order: sortOrder.toUpperCase(),
+            meta_key: metaKey
+        },
+        success: (response) => {
+            this.handleLoadSuccess(response, append);
+        },
+        error: (xhr, status, error) => {
+            this.handleLoadError(error);
+        },
+        complete: () => {
+            this.loading = false;
+            this.container.removeClass('filtering'); // Remove loading overlay
+        }
+    });
+}
 
-            this.loading = true;
-
-            if (!append) {
-                this.grid.empty();
-                $('#rsp-no-results').hide();
-            }
-
-            // Parse sort
-            const [sortBy, sortOrder] = this.sortBy.split('-');
-
-            // Determine orderby value for WordPress
-            let orderby = sortBy;
-            let metaKey = '';
-
-            if (sortBy === 'price') {
-                orderby = 'meta_value_num';
-                metaKey = 'ring_price';
-            }
-
-            $.ajax({
-                url: rsp_ajax.ajax_url,
-                type: 'POST',
-                data: {
-                    action: 'rsp_load_rings',
-                    nonce: rsp_ajax.nonce,
-                    page: this.currentPage,
-                    per_page: this.perPage,
-                    search: this.searchQuery,
-                    filters: this.filters,
-                    orderby: orderby,
-                    order: sortOrder.toUpperCase(),
-                    meta_key: metaKey
-                },
-                success: (response) => {
-                    this.handleLoadSuccess(response, append);
-                },
-                error: (xhr, status, error) => {
-                    this.handleLoadError(error);
-                },
-                complete: () => {
-                    this.loading = false;
-                }
+handleLoadSuccess(response, append) {
+    console.log('AJAX Response:', response);
+    
+    if (response.success) {
+        this.totalPages = response.pages;
+        
+        if (append) {
+            response.rings.forEach(ring => {
+                this.grid.append(ring);
             });
+        } else {
+            this.grid.html(response.rings.join(''));
         }
-
-        handleLoadSuccess(response, append) {
-            console.log('AJAX Response:', response);
-
-            if (response.success) {
-                this.totalPages = response.pages;
-
-                if (append) {
-                    response.rings.forEach(ring => {
-                        this.grid.append(ring);
-                    });
-                } else {
-                    this.grid.html(response.rings.join(''));
-                }
-
-                // Update results count
-                $('#rsp-count').text(response.total.toLocaleString());
-
-                // Show/hide load more and all loaded message
-                const $loadMoreContainer = $('.rsp-load-more-container');
-                const $allLoadedMessage = $('.rsp-all-loaded');
-
-                if (this.currentPage >= response.pages) {
-                    // No more pages - hide button, show message
-                    $loadMoreContainer.removeClass('show');
-                    if (response.total > 0) {
-                        $allLoadedMessage.show();
-                    }
-                } else {
-                    // More pages available - show button, hide message
-                    $loadMoreContainer.addClass('show');
-                    $allLoadedMessage.hide();
-                }
-
-                // Show no results
-                if (response.total === 0) {
-                    $('#rsp-no-results').show();
-                    $loadMoreContainer.removeClass('show');
-                    $allLoadedMessage.hide();
-                } else {
-                    $('#rsp-no-results').hide();
-                }
-
-                // Debug what was actually rendered
-                setTimeout(() => {
-                    this.debugRingCards();
-                }, 100);
-
-                // Scroll to top if not appending
-                if (!append && this.currentPage === 1) {
-                    $('html, body').animate({
-                        scrollTop: this.container.offset().top - 100
-                    }, 500);
-                }
-
-            } else {
-                console.error('Error loading rings:', response);
-                this.showError('Failed to load rings. Please try again.');
+        
+        // Mark as loaded on first successful load
+        if (this.initialLoad) {
+            this.container.addClass('loaded');
+            this.initialLoad = false;
+        }
+        
+        // Update results count
+        $('#rsp-count').text(response.total.toLocaleString());
+        
+        // Show/hide load more and all loaded message
+        const $loadMoreContainer = $('.rsp-load-more-container');
+        const $allLoadedMessage = $('.rsp-all-loaded');
+        
+        if (this.currentPage >= response.pages) {
+            // No more pages - hide button, show message
+            $loadMoreContainer.removeClass('show');
+            if (response.total > 0) {
+                $allLoadedMessage.show();
             }
+        } else {
+            // More pages available - show button, hide message
+            $loadMoreContainer.addClass('show');
+            $allLoadedMessage.hide();
         }
+        
+        // Show no results
+        if (response.total === 0) {
+            $('#rsp-no-results').show();
+            $loadMoreContainer.removeClass('show');
+            $allLoadedMessage.hide();
+        } else {
+            $('#rsp-no-results').hide();
+        }
+        
+        // Debug what was actually rendered
+        setTimeout(() => {
+            this.debugRingCards();
+        }, 100);
+        
+        // Scroll to top if not appending
+        if (!append && this.currentPage === 1 && !this.initialLoad) {
+            $('html, body').animate({
+                scrollTop: this.container.offset().top - 100
+            }, 500);
+        }
+        
+    } else {
+        console.error('Error loading rings:', response);
+        this.showError('Failed to load rings. Please try again.');
+        this.container.addClass('loaded'); // Still mark as loaded to hide skeleton
+    }
+}
 
 
 
@@ -341,16 +354,17 @@
             this.showError('Network error. Please check your connection.');
         }
 
-        showError(message) {
-            const errorHtml = `
-                <div class="rsp-error-message">
-                    <i class="fa fa-exclamation-triangle"></i>
-                    <span>${message}</span>
-                    <button onclick="location.reload()" class="rsp-retry-btn">Retry</button>
-                </div>
-            `;
-            this.grid.html(errorHtml);
-        }
+showError(message) {
+    const errorHtml = `
+        <div class="rsp-error-message">
+            <i class="fa fa-exclamation-triangle"></i>
+            <span>${message}</span>
+            <button onclick="location.reload()" class="rsp-retry-btn">Retry</button>
+        </div>
+    `;
+    this.grid.html(errorHtml);
+    this.container.addClass('loaded'); // Hide skeleton on error
+}
 
         loadMore() {
             this.currentPage++;
