@@ -401,18 +401,11 @@
     margin-bottom: 4px !important;
 }
 
-.rsp-currency {
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    color: var(--rsp-gray-600) !important;
-    font-family: var(--rsp-font) !important;
-}
-
+/* UPDATED - Remove currency/amount split, show as single text */
 .rsp-amount {
     font-size: 24px !important;
     font-weight: 700 !important;
     color: var(--rsp-gray-900) !important;
-    margin-left: 2px !important;
     font-family: var(--rsp-font) !important;
 }
 
@@ -619,10 +612,13 @@
     background: #f8fafc !important;
 }
 
+/* HIDE the actual checkbox input */
 .rsp-checkbox-item input[type="checkbox"] {
-    margin-right: 12px !important;
-    width: 18px !important;
-    height: 18px !important;
+    position: absolute !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
     cursor: pointer !important;
 }
 
@@ -634,6 +630,7 @@
     border-radius: 3px !important;
     margin-right: 12px !important;
     transition: all 0.2s ease !important;
+    flex-shrink: 0 !important;
 }
 
 .rsp-checkbox-item input[type="checkbox"]:checked + .rsp-checkmark {
@@ -1211,3 +1208,31 @@ body.rsp-filters-open {
 }
 
 
+/* All Loaded Message */
+.rsp-all-loaded {
+    text-align: center !important;
+    padding: 40px 20px !important;
+    margin: 40px 0 !important;
+    background: var(--rsp-gray-50) !important;
+    border-radius: 12px !important;
+}
+
+.rsp-all-loaded-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+.rsp-all-loaded-content i {
+    font-size: 48px !important;
+    color: var(--rsp-success) !important;
+}
+
+.rsp-all-loaded-content p {
+    margin: 0 !important;
+    font-size: 16px !important;
+    color: var(--rsp-gray-600) !important;
+    font-family: var(--rsp-font) !important;
+    font-weight: 500 !important;
+}
